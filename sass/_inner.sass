@@ -1,0 +1,85 @@
+.block-content
+	padding: 20px 22px 35px
+	border:  3px solid #d4d4d4
+	background-color: #fff
+.main-menu
+	padding: 20px 27px 16px
+	border-radius: 3px
+	background: url(../img/bg-menu.png) 0 0 repeat-x
+	+clr	
+	&__title
+		font-size: 36px
+		color: #FFF 
+		+bold
+	&__capabilities
+		margin: 30px 0 45px 
+		
+		+clr
+		li
+			float: left
+			max-width: 286px
+			&:last-child
+				float: right	
+			span
+				display: table-cell
+				padding-top: 3px 
+				width: 48px
+				height: 48px
+				border-radius: 50%
+				background: #fff
+				text-align: center
+				vertical-align: middle
+			p
+				display: table-cell 
+				color: #FFF
+				padding-left: 24px 
+				padding-right: 34px
+				vertical-align: middle
+			i
+				display: inline-block
+		.icon-write
+			+s(write)
+		.icon-dialog
+			+s(dialog)
+		.icon-eye
+			+s(eye)
+		
+	&__bottom
+		display: table
+		table-layout: fixed
+		width: 100%
+		text-align: center
+		li
+			display: table-cell
+			&:first-child
+				text-align: left
+			&:last-child
+				text-align: right
+		a
+			color: $yellow
+			font-size: 16px
+			text-decoration: none
+			+reg
+.search
+	position: relative
+	&__name
+		display: block
+		margin-bottom: 6px
+		font-size: 10px
+		padding: 0 
+		color: $yellow
+		+italic
+	input
+		width: 130px
+		height: 26px
+		border: 2px solid rgba(0,0,0,.15)
+		border-radius: 3px
+		padding: 0 23px 0 5px
+	a
+		position: absolute
+		bottom: 0
+		right: 4px
+	.icon-search
+		+s(search)
+
+
