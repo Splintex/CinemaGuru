@@ -46,14 +46,87 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
-
+=light
+	font-weight: 300
+=bold
+	font-weight: 700
+=reg
+	font-weight: 400
 
 body
-	font-family: Arial, sans-serif 
+	font-family: 'Roboto', sans-serif
+	+light
 	font-size: 12px 
-	line-height: 1.4
+	line-height: 1.6
+	background: url(../img/bg.jpg) 50% 0 no-repeat
+.out
+	width: 1200px
+	margin: 0 auto 
+.header
+	text-align: center
+	position: relative
+	&__logo
+		display: inline-block
+	&__enter
+		position: absolute
+		right: 54px
+		top: 41px
+		font-size: 14px
+		+light
+.user-link
+	margin-left: 25px 
+	display: inline-block
+	text-decoration: none
+	color: #000
+	line-height: 1
+	&:hover
+		span
+			border-color: transparent  	
+	span
+		display: inline-block
+		margin-left: 7px 
+		border-bottom: 1px dashed #000
+		+tr(border-color 0.3s)
+			
+
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(enter)
 
 
+.footer
+	margin: 0 auto 
+	padding: 44px 12px 
+	position: relative
+	text-align: center
+	width: 1200px
+	color: #616C76
+	font-size: 14px 
+	+clr
+	+reg
+	a
+		color: #616C76 
+		+reg
+		+tr(text-decoration 0.3s)
+		&:hover
+			text-decoration: none 
+	&__logo
+		position: absolute
+		left: 0
+		right: 0 
+		top: 32px
+		text-align: center		
+	&__left
+		float: left
+		position: relative
+		z-index: 2
+		span
+			margin-right: 37px
+	&__right
+		float: right
+		position: relative
+		z-index: 2
 // common blocks      
 
 
