@@ -66,12 +66,21 @@ body
 	font-size: 12px 
 	line-height: 1.6
 	background: url(../img/bg.jpg) 50% 0 no-repeat
+a
+	text-decoration: none
 .out
-	width: 1200px
-	margin: 0 auto 
+	position: relative
+	width: 1200px 
+	margin: 0 auto -108px
+	min-height: 100%
+	height: auto !important
+	height: 100%
+.push
+	clear: both
+	height: 108px
 .header
 	position: relative
-	margin: 28px 0 7px 
+	padding: 28px 0 7px 
 	&__logo
 		display: inline-block
 		margin-left: 292px
@@ -117,6 +126,7 @@ body
 		color: #616C76 
 		+reg
 		+tr(text-decoration 0.3s)
+		text-decoration: underline
 		&:hover
 			text-decoration: none 
 	&__logo
@@ -146,6 +156,7 @@ body
 	a
 		display: inline-block
 		color: #000
+		text-decoration: underline
 		&:hover
 			text-decoration: none
 .btn

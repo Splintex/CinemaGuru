@@ -28,9 +28,13 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 body { font-family: "Roboto", sans-serif; font-weight: 300; font-size: 12px; line-height: 1.6; background: url(../img/bg.jpg) 50% 0 no-repeat; }
 
-.out { width: 1200px; margin: 0 auto; }
+a { text-decoration: none; }
 
-.header { position: relative; margin: 28px 0 7px; }
+.out { position: relative; width: 1200px; margin: 0 auto -108px; min-height: 100%; height: auto !important; height: 100%; }
+
+.push { clear: both; height: 108px; }
+
+.header { position: relative; padding: 28px 0 7px; }
 .header__logo { display: inline-block; margin-left: 292px; }
 .header__enter { position: absolute; right: 54px; top: 41px; font-size: 14px; font-weight: 300; }
 
@@ -41,7 +45,7 @@ body { font-family: "Roboto", sans-serif; font-weight: 300; font-size: 12px; lin
 
 .footer { margin: 0 auto; padding: 40px 12px 46px; position: relative; text-align: center; width: 1200px; color: #616c76; font-size: 14px; *zoom: 1; font-weight: 400; }
 .footer:after { content: " "; display: table; clear: both; }
-.footer a { color: #616c76; font-weight: 400; -moz-transition: text-decoration 0.3s; -o-transition: text-decoration 0.3s; -webkit-transition: text-decoration 0.3s; transition: text-decoration 0.3s; }
+.footer a { color: #616c76; font-weight: 400; -moz-transition: text-decoration 0.3s; -o-transition: text-decoration 0.3s; -webkit-transition: text-decoration 0.3s; transition: text-decoration 0.3s; text-decoration: underline; }
 .footer a:hover { text-decoration: none; }
 .footer__logo { position: absolute; left: 0; right: 0; top: 34px; text-align: center; }
 .footer__left { float: left; position: relative; z-index: 2; }
@@ -51,7 +55,7 @@ body { font-family: "Roboto", sans-serif; font-weight: 300; font-size: 12px; lin
 .date { font-size: 10px; color: #5a5a5a; }
 
 .tags { float: left; padding-right: 20px; }
-.tags a { display: inline-block; color: black; }
+.tags a { display: inline-block; color: black; text-decoration: underline; }
 .tags a:hover { text-decoration: none; }
 
 .btn { display: inline-block; padding: 2px 15px; color: white; border-radius: 2px; background: #161d24; box-shadow: 0 -2px 0 black inset; text-decoration: none; font-weight: 300; -moz-transition: background 0.2s; -o-transition: background 0.2s; -webkit-transition: background 0.2s; transition: background 0.2s; }
@@ -93,6 +97,7 @@ body { font-family: "Roboto", sans-serif; font-weight: 300; font-size: 12px; lin
 .main-menu__bottom li:first-child { text-align: left; }
 .main-menu__bottom li:last-child { text-align: right; }
 .main-menu__bottom a { color: #eee551; font-size: 16px; text-decoration: none; font-weight: 400; }
+.main-menu__bottom a:hover { text-decoration: underline; }
 
 .search { position: relative; }
 .search__name { display: block; margin-bottom: 2px; font-size: 10px; padding: 0; color: #eee551; font-weight: 300; font-style: italic; }
@@ -100,7 +105,7 @@ body { font-family: "Roboto", sans-serif; font-weight: 300; font-size: 12px; lin
 .search a { position: absolute; bottom: 0; right: 4px; }
 .search .icon-search { background: url('../img/icons-s98dc533f46.png') 0 -132px no-repeat; width: 17px; height: 17px; }
 
-.small-name { margin-bottom: 10px; color: #8997a5; font-size: 18px; }
+.cat-name { display: inline-block; margin-bottom: 10px; color: #8997a5; font-size: 18px; }
 
 .news { padding: 9px 0 13px; margin-bottom: 3px; border-bottom: 2px solid #161d24; *zoom: 1; font-weight: 300; }
 .news:after { content: " "; display: table; clear: both; }
@@ -124,8 +129,8 @@ body { font-family: "Roboto", sans-serif; font-weight: 300; font-size: 12px; lin
 .comment .btn { float: right; }
 .comment .btn.is-width { float: none; }
 
-.user { padding: 1px; width: 200px; background: #141a20; font-size: 0; }
-.user__img { display: inline-block; margin-right: 16px; vertical-align: middle; }
+.user { padding: 1px; width: 200px; background: #141a20; font-size: 0; border-radius: 2px; }
+.user__img { display: inline-block; margin-right: 16px; vertical-align: middle; border-radius: 2px; }
 .user__name { display: inline-block; color: #eee551; text-decoration: none; font-size: 12px; width: 115px; vertical-align: middle; font-weight: 300; }
 .user__name:hover { color: #d4ca1e; }
 
