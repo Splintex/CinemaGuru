@@ -1,8 +1,10 @@
 .block-content
-	padding: 20px 22px 35px
+	padding: 20px 26px 35px
 	border:  3px solid #d4d4d4
 	background-color: #fff
+	+clr
 .main-menu
+	margin-bottom: 9px
 	padding: 20px 27px 16px
 	border-radius: 3px
 	background: url(../img/bg-menu.png) 0 0 repeat-x
@@ -12,12 +14,12 @@
 		color: #FFF 
 		+bold
 	&__capabilities
-		margin: 30px 0 45px 
+		margin: 30px 0 39px 
 		
 		+clr
 		li
 			float: left
-			max-width: 286px
+			max-width: 287px
 			&:last-child
 				float: right	
 			span
@@ -64,7 +66,7 @@
 	position: relative
 	&__name
 		display: block
-		margin-bottom: 6px
+		margin-bottom: 2px
 		font-size: 10px
 		padding: 0 
 		color: $yellow
@@ -81,5 +83,151 @@
 		right: 4px
 	.icon-search
 		+s(search)
+.block-content__left
+	float: left
+	width: 538px
+.block-content__right
+	float: right
+	width: 568px	
+.small-name
+	color: #8997A5 
+	font-size: 18px 
+	+light
+	&_marg
+		margin-bottom: 8px
+.news
+	padding: 9px 0 18px
+	border-bottom: 2px solid $darkb
+	+clr
+	+light
+	&__title
+		text-decoration: none
+		margin-bottom: 8px 
+		color: $darkb
+		font-size: 24px  
+		+light	
+.post
+	margin: 15px 0 11px
+	+clr
+	&__img
+		float: left
+		margin-right: 20px
+		img
+			border-radius: 3px		
+.date
+	font-size: 10px 
+	color: #5A5A5A 
+.tags
+	float: left
+	padding-right: 20px
+	a
+		display: inline-block
+		color: #000
+		&:hover
+			text-decoration: none
+.btn
+	float: right
+	padding: 2px 15px
+	color: #FFF
+	border-radius: 2px
+	background: $darkb
+	box-shadow: 0 -2px 0 #000 inset
+	text-decoration: none
+	+light
+	&:hover		
+		background-color: #232E39
+	&:active
+		box-shadow: 0 2px 0 #000 inset
+		color: #E5E5E5 
+	&_yellow
+		background: $yellow
+		box-shadow: 0 -2px 0 #d4ca1e inset
+		color: #000
+		&:hover		
+			background-color: #f8ef56
+		&:active
+			box-shadow: 0 2px 0 #d4ca1e inset
+			color: #434343 
+.comment
+	position: relative
+	margin-top: 30px
+	padding: 13px 
+	border: 2px solid #1b3b5b
+	border-radius: 2px
+	+clr
+	&__user
+		position: absolute
+		right: 14px
+		top: -20px
+	&__title
+		font-size: 24px 
+		color: $darkb
+		+bold
+	&__wrap
+		padding: 14px 0 6px
+		clear: both   
+	&__show
+		display: block 
+		padding: 4px 0
+		text-align: center
+		background: $lightb
+		box-shadow: 0 2px 0 #c6ccd1
+		color: #657786
+		border-radius: 2px
+		text-decoration: none
+.user
+	padding: 1px
+	width: 200px
+	background: #141a20
+	font-size: 0 
+	&__img
+		display: inline-block
+		margin-right: 16px
+		vertical-align: middle
+	&__name
+		display: inline-block
+		color: $yellow
+		text-decoration: none
+		font-size: 12px
+		width: 115px
+		vertical-align: middle
+		+light
+		&:hover
+			color: #d4ca1e
+
+.opinion
+	padding: 11px 0 17px
+	border-top: 1px solid $lightb
+	clear: both
+	+clr
+	&:first-child
+		border-top: none 
+	&__img
+		float: left
+		margin-right: 11px
+		padding-top: 5px 
+		img
+			border-radius: 2px
+	&__right-side
+		overflow: hidden
+	&__title
+		display: inline-block
+		margin-bottom: 8px
+		vertical-align: top
+		color: #141A20 
+		text-decoration: none
+		+reg
+	p
+	+light
+	color: #141A20
+.to-comment
+	input
+		padding: 6px 10px 
+		width: 100%
+		border-radius: 3px
+		border: 1px solid $lightb
+		color: #141a20 
+
+
 
 
