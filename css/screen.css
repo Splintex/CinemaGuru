@@ -36,7 +36,7 @@ a { text-decoration: none; }
 
 .header { position: relative; padding: 28px 0 7px; }
 .header__logo { display: inline-block; margin-left: 292px; }
-.header__enter { position: absolute; right: 54px; top: 41px; font-size: 14px; font-weight: 300; }
+.header__enter { position: absolute; right: 54px; top: 67px; font-size: 14px; font-weight: 300; }
 
 .user-link { margin-left: 25px; display: inline-block; text-decoration: none; color: black; line-height: 1; }
 .user-link:hover span { border-color: transparent; }
