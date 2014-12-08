@@ -7,6 +7,10 @@
 	&_small-left
 		.main__left
 			width: 537px
+	&_error
+		position: relative
+		background: #0e1419
+		height: 666px
 .main__left
 	float: left
 	width: 567px
@@ -192,7 +196,8 @@
 		display: inline-block
 		margin-right: 16px
 		vertical-align: middle
-		border-radius: 2px 
+		img
+			border-radius: 2px 
 	&__name
 		display: inline-block
 		color: $yellow
@@ -314,7 +319,41 @@
 	+s(facebook)
 .icon-twitter
 	+s(twitter)
-		
+.error
+	margin: 20px 0 0 13px
+	color: $yellow
+	+clr
+	&__col1
+		float: left
+		width: 588px
+	&__title
+		margin-bottom: 41px 				
+		font-size: 36px
+		+med
+	&__info
+		font-size: 16px
+		+reg
+		a
+			color: #FFF
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	&__404
+		float: right
+		margin: -40px 96px 0 0
+		font-size: 160px
+		text-align: right
+		+bold
+.icon-logo-men
+	display: inline-block
+	position: absolute
+	bottom: 95px
+	left: 0
+	right: 0
+	text-align: center
+	
+
+
 
 
 
