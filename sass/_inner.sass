@@ -1,24 +1,3 @@
-.main
-	padding: 20px 26px 35px
-	border:  3px solid #d4d4d4
-	background-color: #fff
-	+clr
-	border-radius: 3px
-	&_small-left
-		.main__left
-			width: 537px
-	&_error
-		position: relative
-		background: #0e1419
-		height: 666px
-.main__left
-	float: left
-	width: 567px
-.main__right
-	float: right
-	width: 567px	 
-	.cat-name
-		margin-left: 13px
 .main-menu
 	margin-bottom: 9px
 	padding: 20px 27px 16px
@@ -351,7 +330,46 @@
 	left: 0
 	right: 0
 	text-align: center
-	
+.team
+	padding: 0 5px
+	color: #161D24
+	+clr
+	&__img
+		float: left
+		margin-right: 29px
+		border-radius: 2px 
+	&__info
+		overflow: hidden
+	&__name
+		margin: -11px 0 -3px		
+		font-size: 24px
+		+bold
+	&__pos
+		font-size: 16px
+		margin-bottom: 8px
+		+reg
+	&__item
+		margin-bottom: 11px 
+		i
+			display: inline-block
+			margin-right: 8px
+			vertical-align: middle
+		span
+			color: #161D24 
+			text-decoration: underline
+			vertical-align: middle
+			font-size: 12px
+			+reg
+			&:hover
+				text-decoration: none
+.icon-mail
+	+s(mail)
+.icon-call
+	+s(call)
+.icon-vk-2
+	+s(vk-2)
+.icon-facebook-2
+	+s(facebook-2)	
 
 
 

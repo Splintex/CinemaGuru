@@ -119,7 +119,29 @@ a
 		display: inline-block
 		vertical-align: middle
 		+s(enter)
-
+.main
+	padding: 20px 26px 35px
+	border:  3px solid #d4d4d4
+	background-color: #fff
+	+clr
+	border-radius: 3px
+	&_small-left
+		.main__left
+			width: 537px
+	&_error
+		position: relative
+		background: #0e1419
+		height: 666px
+	&__left
+		float: left
+		width: 567px
+	&__right
+		float: right
+		width: 567px	 
+		.cat-name
+			margin-left: 13px
+	&_right-left
+		float: left
 
 .footer
 	margin: 0 auto 
