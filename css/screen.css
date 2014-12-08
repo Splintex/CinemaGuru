@@ -35,7 +35,7 @@ a { text-decoration: none; }
 .push { clear: both; height: 108px; }
 
 .header { position: relative; padding: 28px 0 7px; }
-.header__logo { display: inline-block; margin-left: 398px; }
+.header__logo { display: inline-block; margin: -6px 0 0 398px; }
 .header__enter { position: absolute; top: 27px; right: 72px; }
 .header_main .header__logo { margin-left: 292px; }
 .header_main .header__enter { right: 54px; top: 67px; font-size: 14px; font-weight: 300; }
