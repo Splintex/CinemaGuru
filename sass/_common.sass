@@ -54,7 +54,9 @@
 	font-weight: 400
 =italic
 	font-weight: 300
-	font-style: italic   
+	font-style: italic
+=med
+	font-weight: 500    
 $yellow: #eee551
 $darkb: #161d24
 $lightb: #d8dfe6
@@ -80,16 +82,23 @@ a
 	height: 108px
 .header
 	position: relative
-	padding: 28px 0 7px 
+	padding: 28px 0 7px
 	&__logo
 		display: inline-block
-		margin-left: 292px
+		margin-left: 398px
 	&__enter
 		position: absolute
-		right: 54px
-		top: 67px
-		font-size: 14px
-		+light
+		top: 27px
+		right: 72px
+	&_main
+		.header__logo
+			margin-left: 292px
+		.header__enter			
+			right: 54px
+			top: 67px
+			font-size: 14px
+			+light
+	
 .user-link
 	margin-left: 25px 
 	display: inline-block

@@ -4,9 +4,12 @@
 	background-color: #fff
 	+clr
 	border-radius: 3px
+	&_small-left
+		.main__left
+			width: 537px
 .main__left
 	float: left
-	width: 537px
+	width: 567px
 .main__right
 	float: right
 	width: 567px	 
@@ -72,7 +75,16 @@
 			text-decoration: none
 			+reg
 			&:hover
-				text-decoration: underline 
+				text-decoration: underline
+	&_inner
+		position: relative
+		z-index: 1
+		padding: 8px 28px 
+		background: url(../img/bg-menu.png) 0 0 repeat-x
+		margin: 0 29px -17px
+		border-radius: 3px
+	 
+
 .search 
 	position: relative
 	&__name
@@ -116,16 +128,25 @@
 	.btn
 		margin-top: 6px
 		float: right
+	&_sep
+		border-bottom: none
+		p
+			margin-bottom: 19px
+		 
 .post
 	margin: 11px 0 11px
 	+clr
 	&__media
 		float: left
 		margin-right: 20px
+		.tags
+			margin-top: 21px 
 	&__img
 		display: block
 		img
-			border-radius: 3px		
+			border-radius: 3px
+	&__body
+		overflow: hidden		
 .comment
 	position: relative
 	margin: 12px 0 30px
@@ -182,6 +203,24 @@
 		+light
 		&:hover
 			color: #d4ca1e
+	&__right
+		display: inline-block
+		vertical-align: middle
+	&_head
+		background: #fff
+		.user__name
+			color: #000
+			&:hover
+				color: #6d6d6d 
+		.user__out
+			display: block
+			font-size: 10px
+			color: #000
+			text-decoration: underline
+			+med
+			&:hover
+				text-decoration: none
+
 
 .opinion
 	padding: 11px 0 13px
@@ -226,7 +265,57 @@
 			color: #141a20
 		&:focus
 			border-color: #ccd1d6 
-			 
+.page-top
+	min-height: 46px
+	margin: 5px 0 46px
+	&_marg
+		margin-bottom: 21px 
+.title	
+	padding: 4px 19px 
+	background: $yellow 
+	font-size: 24px
+	color: #161D24
+	border-radius: 3px
+	+bold
+.nav
+	margin: 40px 0 12px
+	&__item
+		display: inline-block
+		padding: 0 10px
+		margin-right: 17px
+		color: #141a20
+		font-size: 14px
+		text-decoration: underline
+		+med
+		&:hover
+			text-decoration: none
+		&:active
+			color: #726e6e
+	.is-active
+		color: #B3B3B3
+		text-decoration: none 
+.bottom
+	+clr
+	&__left
+		float: left
+		min-width: 537px
+	&__right
+		float: right
+.share
+	display: inline-block
+	vertical-align: middle
+	&__img
+		display: inline-block
+		margin-left: 14px
+		vertical-align: middle
+.icon-vk
+	+s(vk)
+.icon-facebook
+	+s(facebook)
+.icon-twitter
+	+s(twitter)
+		
+
 
 
 
