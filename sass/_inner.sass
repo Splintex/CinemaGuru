@@ -478,8 +478,62 @@
 .icon-partner
 	display: inline-block
 	margin-bottom: 32px 	
-		
-
+.profile
+	margin-bottom: 20px
+	+clr
+.name
+	display: inline-block
+	font-size: 26px
+	+bold
+.redact
+	display: inline-block
+	margin-left: 10px 
+	font-size: 12px
+	color: #A5AEB8
+	+reg
+	border-bottom: 1px dashed #A5AEB8
+	vertical-align: top
+	line-height: 1.4
+	&:hover
+		border-bottom: none
+.person
+	+clr
+	&__img
+		float: left
+		border: 2px solid #DDE6F0
+		border-radius: 3px
+		font-size: 0
+		img
+			border-radius: 3px
+	&__right
+		overflow: hidden
+		padding-left: 17px 
+	&__item
+		margin-bottom: 8px
+		i
+			display: inline-block
+			vertical-align: middle
+		span
+			display: inline-block
+			margin-left: 12px 
+			vertical-align: middle
+			font-size: 14px
+			+med
+.icon-loc
+	+s(loc)
+	margin-right: 4px 
+.icon-calend
+	+s(calend)
+.icon-sex
+	+s(sex)
+	margin: 0 -6px 
+.descr
+	font-size: 12px
+	+light
+	p
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
 
 
 
