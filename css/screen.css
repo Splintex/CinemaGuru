@@ -52,7 +52,6 @@ a { text-decoration: none; }
 .main__left { float: left; width: 567px; }
 .main__right { float: right; width: 567px; }
 .main__right .cat-name { margin-left: 13px; }
-.main_right-left { float: left; }
 
 .footer { margin: 0 auto; padding: 40px 12px 46px; position: relative; text-align: center; width: 1200px; color: #616c76; font-size: 14px; *zoom: 1; font-weight: 400; }
 .footer:after { content: " "; display: table; clear: both; }
@@ -211,7 +210,7 @@ a { text-decoration: none; }
 
 .icon-logo-men { display: inline-block; position: absolute; bottom: 95px; left: 0; right: 0; text-align: center; }
 
-.team { padding: 0 5px; color: #161d24; *zoom: 1; }
+.team { float: left; padding: 0 5px; color: #161d24; width: 50%; *zoom: 1; }
 .team:after { content: " "; display: table; clear: both; }
 .team__img { float: left; margin-right: 29px; border-radius: 2px; }
 .team__info { overflow: hidden; }
@@ -229,6 +228,10 @@ a { text-decoration: none; }
 .icon-vk-2 { background: url('../img/icons-sd8ab6634d5.png') 0 -351px no-repeat; width: 19px; height: 19px; }
 
 .icon-facebook-2 { background: url('../img/icons-sd8ab6634d5.png') 0 -160px no-repeat; width: 19px; height: 19px; }
+
+.team-wrap__wrap { *zoom: 1; }
+.team-wrap__wrap:after { content: " "; display: table; clear: both; }
+.team-wrap__wrap:first-child { margin-bottom: 58px; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
