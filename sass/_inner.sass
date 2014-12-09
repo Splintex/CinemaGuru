@@ -388,7 +388,9 @@
 	margin-bottom: 22px
 	color: #161D24
 	font-size: 14px	
-	+reg 
+	+reg
+	&_marg
+		margin-top: -14px
 .icon-logo-man-2
 	display: inline-block
 	width: 100%
@@ -442,6 +444,9 @@
 			width: 150px
 		.field__body
 			width: 110px
+	&_marg
+		.field__title
+			margin-bottom: 20px 
 
 	textarea
 		display: block
@@ -460,10 +465,16 @@
 	&__img
 		display: inline-block
 		vertical-align: middle
-		margin-right: 19px 
+		margin-right: 19px
+		img
+			border-radius: 3px
 	.btn
 		font-size: 14px 
-
+.contacts
+	margin: -12px 0 22px
+	font-size: 18px
+	color: #161D24
+	+bold
 	
 		
 

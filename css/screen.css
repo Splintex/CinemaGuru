@@ -52,6 +52,7 @@ a { text-decoration: none; }
 .main__left { float: left; width: 567px; position: relative; }
 .main__right { float: right; width: 567px; }
 .main__right .cat-name { margin-left: 13px; }
+.main_small { width: 624px; }
 
 .footer { margin: 0 auto; padding: 40px 12px 46px; position: relative; text-align: center; width: 1200px; color: #616c76; font-size: 14px; *zoom: 1; font-weight: 400; }
 .footer:after { content: " "; display: table; clear: both; }
@@ -237,6 +238,7 @@ a { text-decoration: none; }
 .title-simple { margin: -11px 0 22px 0; font-size: 24px; color: #161d24; font-weight: 700; }
 
 .text { margin-bottom: 22px; color: #161d24; font-size: 14px; font-weight: 400; }
+.text_marg { margin-top: -14px; }
 
 .icon-logo-man-2 { display: inline-block; width: 100%; text-align: center; height: 297px; line-height: 297px; }
 .icon-logo-man-2 img { vertical-align: middle; }
@@ -254,12 +256,16 @@ a { text-decoration: none; }
 .field_code { display: inline-block; vertical-align: middle; margin-bottom: 0; }
 .field_code .field__title { font-size: 12px; width: 150px; }
 .field_code .field__body { width: 110px; }
+.field_marg .field__title { margin-bottom: 20px; }
 .field textarea { display: block; padding: 7px 10px; width: 100%; height: 130px; resize: vertical; max-height: 160px; border: 2px solid #d4d4d4; border-radius: 3px; }
 .field textarea:focus { border-color: #a8a8a8; }
 
 .code { font-size: 0; margin-top: 7px; }
 .code__img { display: inline-block; vertical-align: middle; margin-right: 19px; }
+.code__img img { border-radius: 3px; }
 .code .btn { font-size: 14px; }
+
+.contacts { margin: -12px 0 22px; font-size: 18px; color: #161d24; font-weight: 700; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
