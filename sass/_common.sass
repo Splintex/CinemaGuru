@@ -241,18 +241,33 @@ a
 		width: 145px
 .rate-counter
 	float: right
-	margin: 10px 6px 0 0
-	span
+	font-size: 0
+	+med
+	color: #161D24
+	margin: 10px 0 0 18px
+	span, i
 		display: inline-block
-		margin-right: 13px 
 		vertical-align: middle
-		color: #161D24
+	span
 		font-size: 14px
-		+bold
+	&_inline
+		float: none 
+		margin-top: 0
+		display: inline-block
+		vertical-align: middle
+	&_dislike
+		color: #a60e0e
+	i
+		margin: 0 6px 
+		
 .icon-like
 	display: inline-block
 	vertical-align: top
 	+s(like)
+.icon-dislike
+	display: inline-block
+	vertical-align: baseline
+	+s(dislike)
 
 
 

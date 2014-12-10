@@ -119,6 +119,14 @@
 .post
 	margin: 11px 0 11px
 	+clr
+	&_nooverfl
+		.post__body
+			overflow: visible
+		.text
+			font-size: 12px
+	&_margbot
+		.post__media
+			margin-bottom: 21px 
 	&__media
 		float: left
 		margin-right: 20px
@@ -583,16 +591,23 @@
 	&:hover
 		border-bottom: none
 .person
+	margin-top: -24px
 	+clr
 	&__img
 		float: left
 		border: 2px solid #DDE6F0
 		border-radius: 3px
 		font-size: 0
+		width: 184px
+		height: 184px
 		img
 			border-radius: 3px
+			width: 100%
+			height: auto
 	&__right
 		overflow: hidden
+		position: relative
+		height: 184px
 		padding-left: 17px 
 	&__item
 		margin-bottom: 8px
@@ -605,6 +620,17 @@
 			vertical-align: middle
 			font-size: 14px
 			+med
+	&__recall
+		position: absolute
+		left: 15px
+		bottom: 0
+	&__link
+		vertical-align: middle
+		font-size: 14px
+		text-decoration: underline
+		color: #161d24 
+		&:hover
+			text-decoration: none
 .icon-loc
 	+s(loc)
 	margin-right: 4px 
