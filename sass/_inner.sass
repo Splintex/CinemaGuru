@@ -255,13 +255,16 @@
 		+tr(border .2s)
 		+placeholder
 			color: #141a20
-		&:focus
-			border-color: #ccd1d6 
+		&:focus		
+			border-color: #a8a8a8
 .page-top
 	min-height: 46px
 	margin: 5px 0 46px
 	&_marg
 		margin-bottom: 21px
+	.name,
+	.redact
+		padding-top: 13px
 .sort
 	height: 46px
 	+clr
@@ -485,6 +488,8 @@
 	+reg
 	&_marg
 		margin-top: -14px
+	&:last-child
+		margin-bottom: 0
 .icon-logo-man-2
 	display: inline-block
 	width: 100%

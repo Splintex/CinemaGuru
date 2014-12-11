@@ -53,6 +53,7 @@ a { text-decoration: none; }
 .main__right { float: right; width: 567px; }
 .main__right .cat-name { margin-left: 13px; }
 .main_small { width: 624px; }
+.main_page-top .page-top { margin: 5px 0 25px; }
 
 .footer { margin: 0 auto; padding: 40px 12px 46px; position: relative; text-align: center; width: 1200px; color: #616c76; font-size: 14px; *zoom: 1; font-weight: 400; }
 .footer:after { content: " "; display: table; clear: both; }
@@ -93,6 +94,9 @@ a { text-decoration: none; }
 .rate-counter_inline { float: none; margin-top: 0; display: inline-block; vertical-align: middle; }
 .rate-counter_dislike { color: #a60e0e; }
 .rate-counter i { margin: 0 6px; }
+
+.rate-post { *zoom: 1; margin-bottom: 24px; }
+.rate-post:after { content: " "; display: table; clear: both; }
 
 .icon-like { display: inline-block; vertical-align: top; background: url('../img/icons-s29a52e7a03.png') 0 -290px no-repeat; width: 21px; height: 19px; }
 
@@ -182,10 +186,11 @@ a { text-decoration: none; }
 .to-comment textarea::-moz-placeholder { color: #141a20; }
 .to-comment textarea::-webkit-input-placeholder { color: #141a20; }
 .to-comment textarea::placeholder { color: #141a20; }
-.to-comment textarea:focus { border-color: #ccd1d6; }
+.to-comment textarea:focus { border-color: #a8a8a8; }
 
 .page-top { min-height: 46px; margin: 5px 0 46px; }
 .page-top_marg { margin-bottom: 21px; }
+.page-top .name, .page-top .redact { padding-top: 13px; }
 
 .sort { height: 46px; *zoom: 1; }
 .sort:after { content: " "; display: table; clear: both; }
@@ -266,6 +271,7 @@ a { text-decoration: none; }
 
 .text { margin-bottom: 22px; color: #161d24; font-size: 14px; font-weight: 400; }
 .text_marg { margin-top: -14px; }
+.text:last-child { margin-bottom: 0; }
 
 .icon-logo-man-2 { display: inline-block; width: 100%; text-align: center; height: 297px; line-height: 297px; }
 .icon-logo-man-2 img { vertical-align: middle; }
