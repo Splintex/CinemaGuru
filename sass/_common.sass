@@ -126,6 +126,7 @@ a
 	background-color: #fff
 	+clr
 	border-radius: 3px
+	clear: both
 	&_small-left
 		.main__left
 			width: 537px
@@ -147,8 +148,8 @@ a
 	&_page-top
 		.page-top
 			margin: 5px 0 25px
-		
-
+		.cat-name
+			margin: 0
 .footer
 	margin: 0 auto 
 	padding: 40px 12px 46px
@@ -233,6 +234,11 @@ a
 		&:active
 			box-shadow: 0 2px 0 #c6ccd1 inset
 			color: #434343 
+	&_black
+		padding: 2px 45px
+		color: $yellow
+		&:active
+			color: #D5CD47 
 
 .raty
 	margin: 5px 0 
@@ -243,6 +249,28 @@ a
 	.raty
 		float: left
 		width: 145px
+.raty-wrap
+	.raty
+		width: 140px
+.to-rate
+	margin-top: -25px
+	+clr	
+	&__item
+		padding: 3px 50px 3px 18px
+		margin-bottom: 6px 
+		background: #ECECEC
+		border-radius: 3px
+		+clr
+	&__left
+		float: left
+		padding-top: 8px
+	span
+		font-size: 14px
+		vertical-align: middle
+		+reg
+	.raty-wrap
+		float: right
+
 .rate-counter
 	float: right
 	font-size: 0
@@ -269,12 +297,13 @@ a
 		
 .icon-like
 	display: inline-block
-	vertical-align: top
 	+s(like)
 .icon-dislike
-	display: inline-block
-	vertical-align: baseline
+	display: inline-block	
 	+s(dislike)
+.icon-star
+	display: inline-block
+	+s(star)
 
 
 

@@ -183,8 +183,13 @@
 		display: inline-block
 		margin-right: 16px
 		vertical-align: middle
+		width: 52px
+		height: 52px 
 		img
-			border-radius: 2px 
+			border-radius: 2px
+			width: 100%
+			height: auto
+			
 	&__name
 		display: inline-block
 		color: $yellow
@@ -212,8 +217,6 @@
 			+med
 			&:hover
 				text-decoration: none
-
-
 .opinion
 	padding: 11px 0 13px
 	border-top: 1px solid $lightb
@@ -226,9 +229,13 @@
 	&__img
 		float: left
 		margin-right: 11px
-		padding-top: 5px 
+		padding-top: 5px
+		width: 52px
+		height: 52px 
 		img
 			border-radius: 2px
+			width: 100%
+			height: auto			
 	&__main
 		overflow: hidden
 	&__title
@@ -265,6 +272,15 @@
 	.name,
 	.redact
 		padding-top: 13px
+.page-part
+	padding: 10px 0 10px 11px	
+	+clr
+	&__left
+		font-size: 18px
+		+bold
+		float: left
+	&__right
+		float: right
 .sort
 	height: 46px
 	+clr
@@ -358,6 +374,22 @@
 	color: #161D24
 	border-radius: 3px
 	+bold
+	+clr
+	.rate-wrap
+		margin: 0
+		float: right
+.title-grey
+	padding: 6px 11px
+	font-size: 18px
+	margin: 0 10px
+	border-radius: 3px
+	background: #ececec  
+	+bold
+	a
+		color: #161D24
+		text-decoration: underline
+		&:hover
+			text-decoration: none 
 .nav
 	margin: 40px 0 12px
 	&__item
@@ -579,6 +611,7 @@
 	margin-bottom: 32px 	
 .profile
 	margin-bottom: 20px
+	clear: both
 	+clr
 .name
 	display: inline-block
@@ -651,7 +684,38 @@
 		margin-top: 20px
 		&:first-child
 			margin-top: 0
-
-
+.object
+	+clr
+	&__img
+		float: left
+		width: 270px
+		font-size: 0
+		margin-right: 14px 
+		img
+			width: 100%
+			height: auto
+			border-radius: 3px 
+	&__right
+		overflow: hidden
+	&__item
+		+light
+		margin-bottom: 7px
+		span
+			+med
+.pictures
+	+clr
+	margin-bottom: 5px
+	&__item
+		float: left
+		margin-left: 6px	
+		&:first-child
+			margin-left: 0
+	&__img
+		display: inline-block
+		font-size: 0		
+		img
+			border-radius: 3px
+			height: auto
+			width: 183px
 
 
