@@ -130,6 +130,15 @@ a
 	&_small-left
 		.main__left
 			width: 537px
+		.news-wrap
+			padding-top: 0
+			width: 537px
+		.news
+			margin-top: 38px
+			&:first-child
+				margin-top: -11px
+			&:last-child
+				border: none
 	&_error
 		position: relative
 		background: #0e1419
@@ -150,6 +159,10 @@ a
 			margin: 5px 0 25px
 		.cat-name
 			margin: 0
+	&_page-part
+		.page-part
+			margin-top: -25px
+
 .footer
 	margin: 0 auto 
 	padding: 40px 12px 46px
@@ -235,7 +248,7 @@ a
 			box-shadow: 0 2px 0 #c6ccd1 inset
 			color: #434343 
 	&_black
-		padding: 2px 45px
+		padding: 2px 35px
 		color: $yellow
 		&:active
 			color: #D5CD47 
@@ -253,11 +266,11 @@ a
 	.raty
 		width: 140px
 .to-rate
-	margin-top: -25px
+	margin-top: -5px
 	+clr	
 	&__item
 		padding: 3px 50px 3px 18px
-		margin-bottom: 6px 
+		margin-bottom: 9px 
 		background: #ECECEC
 		border-radius: 3px
 		+clr
