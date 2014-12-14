@@ -25,7 +25,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: "Roboto", sans-serif; font-weight: 300; font-size: 12px; line-height: 1.6; background: url(../img/bg.jpg) 50% 0 no-repeat; color: #161d24; }
+body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 12px; line-height: 1.6; background: url(../img/bg.jpg) 50% 0 no-repeat; color: #161d24; }
 
 a { text-decoration: none; }
 
@@ -75,7 +75,7 @@ a { text-decoration: none; }
 .tags a { display: inline-block; color: black; text-decoration: underline; }
 .tags a:hover { text-decoration: none; }
 
-.btn { display: inline-block; padding: 2px 15px; color: white; border-radius: 2px; background: #161d24; box-shadow: 0 -2px 0 black inset; text-decoration: none; font-weight: 300; -moz-transition: background 0.2s; -o-transition: background 0.2s; -webkit-transition: background 0.2s; transition: background 0.2s; }
+.btn { display: inline-block; padding: 2px 15px 3px; color: white; font-family: "Roboto", Arial, sans-serif; font-weight: 400; border-radius: 2px; background: #161d24; box-shadow: 0 -2px 0 black inset; text-decoration: none; font-weight: 300; -moz-transition: background 0.2s; -o-transition: background 0.2s; -webkit-transition: background 0.2s; transition: background 0.2s; }
 .btn:hover { background-color: #232e39; }
 .btn:active { box-shadow: 0 2px 0 black inset; color: #e5e5e5; }
 .btn.is-width { display: block; text-align: center; width: 100%; }
@@ -412,5 +412,3 @@ a { text-decoration: none; }
 .popup:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 
 .popup__in { display: inline-block; vertical-align: middle; text-align: left; position: relative; padding: 25px; width: 575px; background: #161d24; font-size: 14px; color: white; font-weight: 300; border: 3px solid #d4d4d4; }
-
-.btn { padding: 2px 15px 3px; font-family: "Roboto", Arial, sans-serif; font-weight: 400; }
