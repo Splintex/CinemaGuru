@@ -717,49 +717,49 @@
 			color: #161D24
 			+med 
 	&__location
-		position: absolute
-		bottom: 3px
-		right: -268px
-		span, i
-			display: inline-block
+		margin-top: 20px
+		span, i, a
+			display: table-cell
 			vertical-align: middle 
 		span
 			font-size: 10px
-			width: 225px
-			margin-left: 15px  
+			padding-left: 15px  
 			+med
 .pictures
 	+clr
 	margin-bottom: 5px
 	&__item
 		float: left
-		margin-left: 8px	
-		&:first-child
-			margin-left: 0
+		margin: 0 0 8px 8px	
 	&__img
-		display: inline-block
-		font-size: 0		
+		display: block
+		height: 125px
+		width: 183px	
+		overflow: hidden	
+		border-radius: 2px
 		img
-			border-radius: 2px
-			height: 125px
-			width: 183px
+			display: block
+			width: 100%
+			height: auto 
+			
 	&_small
+		margin-left: -5px
 		.pictures__item
-			margin-left: 3px
-			&:first-child
-				margin-left: 0
+			margin: 0 0 5px 5px
 		.pictures__img
-			border: 1px solid $lightb
-			border-radius: 2px			
-			img
-				width: 90px
-				height: 60px
+			border: 2px solid $lightb
+			border-radius: 2px
+			width: 90px
+			height: 60px
 
 .pictures-wrap
 	margin-top: 10px
+	overflow: hidden
+	.pictures
+		margin-left: -8px
 	.pictures__item
-		&:nth-child(4n)
-			margin-left: 0
+		&:first-child
+			margin-left: 8px
 .location
 	float: left
 	i,

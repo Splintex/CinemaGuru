@@ -60,6 +60,7 @@
 $yellow: #eee551
 $darkb: #161d24
 $lightb: #d8dfe6
+$lightg: #e9e9e9 
 
 
 body
@@ -162,6 +163,86 @@ a
 	&_page-part
 		.page-part
 			margin-top: -25px
+	&_redact
+		.profile
+			margin-bottom: 8px 
+		.object__img
+			background: $lightg
+			height: 180px
+			border-radius: 2px
+			text-align: center
+			+vertical		
+		.object__link			
+			color: #161D24
+			span
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+		.object__item
+			+clr
+			margin-bottom: 2px
+			p
+				float: left
+		.drop
+			float: right
+		.pictures-wrap
+			margin-top: 0
+		.pictures__img
+			background: $lightg
+			text-align: center
+			+vertical
+		.descr
+			width: 567px
+			height: 160px			
+			textarea
+				padding: 15px 13px 
+				width: 100%
+				height: 100%
+				border: none
+				color: #161D24
+				font-size: 12px
+				background: $lightg
+				border-radius: 2px				
+				+med
+		.select__list,
+		.select__text
+			background-color: #FFF 
+		.site-input
+			float: right
+.drop
+	position: relative
+	width: 82px
+	background: $lightg
+	height: 24px
+	border-radius: 2px
+	&:after
+		content: ""
+		position: absolute
+		+s(triangle)
+		right: 9px		
+		bottom: 7px
+	&_width
+		width: 183px 
+.site-input
+	padding: 0 6px
+	height: 24px
+	width: 250px 
+	background: $lightg
+	color: #161D24
+	border-radius: 2px
+.download
+	padding: 8px 27px 
+	font-size: 14px
+	+med
+	color: #161d24
+	background: #F4F4F4
+	border-radius: 2px
+	&:hover
+		background-color: #fff
+	 			
+
+
+
 
 .footer
 	margin: 0 auto 
