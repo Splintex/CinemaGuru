@@ -21,24 +21,132 @@
 	z-index: 200
 	padding: 30px 0 
 	+vertical
+	&_width
+		.popup__in
+			width: 625px
 .popup__in
 	position: relative
 	display: inline-block
 	vertical-align: middle
 	text-align: left
-	padding: 25px 
+	padding: 18px 25px 28px
 	width: 575px
 	background: #161D24
 	font-size: 14px
 	color: #fff
 	+light 
 	border: 3px solid #D4D4D4
+	border-radius: 4px 
 .popup__title
 	font-size: 24px
 	+bold
 	color: $yellow 
 .popup__close
 	position: absolute
-	right: 43px
-	top: 24px
+	right: 23px
+	top: 23px
 	+s(close)
+.popup__row
+	margin-bottom: 20px
+	&.is-yellow
+		color: $yellow 
+	&.is-small-margin
+		margin-bottom: 0
+	span
+		display: inline-block
+		vertical-align: middle
+	.soc
+		margin-left: 25px
+.popup__descr
+	margin: 24px 0
+	p
+		margin-bottom: 20px
+	&.is-yellow
+		color: $yellow 
+	.icon-approve
+		margin: 0 10px 0 14px 
+.popup__forgot-pass
+	float: right
+	color: $yellow
+	font-size: 12px
+	+light
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.popup__error
+	margin: 27px 0 0 
+	color: #f46a6a
+	font-size: 14px 
+.soc
+	font-size: 0
+	display: inline-block
+	vertical-align: middle
+	a
+		position: relative
+		display: inline-block
+		margin-left: 22px
+		vertical-align: middle
+		width: 48px
+		height: 48px
+		line-height: 44px
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		border: 2px solid #fff
+		text-align: center
+		&:first-child
+			margin-left: 0
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+		&:after	
+			content: ""
+			position: absolute
+			bottom: -9px
+			left: 0
+			right: 0
+			height: 2px
+			background: #fff 
+			+tr(background .2s)
+		&:hover
+			&:after
+				background: transparent 
+	&__vk
+		&:before
+			+s(soc-vk)
+	&__fb
+		&:before
+			+s(soc-fb)
+	&__tw
+		&:before
+			+s(soc-tw)
+.field-row
+	font-size: 0
+.field_cell
+	display: inline-block
+	vertical-align: middle
+	margin-left: 28px
+	width: 245px
+	&:first-child
+		margin-left: 0
+	.field__title
+		color: $yellow
+		width: 62px
+	.field__body
+		width: 183px
+.field_yellow
+	color: $yellow 
+	.field__title
+		color: $yellow
+.btn
+	height: 23px
+	padding: 0 15px 
+	line-height: 21px
+	font-size: 14px
+.icon-approve
+	display: inline-block
+	vertical-align: middle
+	+s(approve)
+
+// .bottom_yellow
+// 	color: $yellow 

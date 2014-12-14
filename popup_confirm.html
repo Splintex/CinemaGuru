@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>popup</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=1200">
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+
+<!-- END out-->
+<div class="footer">
+	<div class="footer__logo">
+		<a href="#">
+			<img src="img/footer-logo.png">
+		</a>
+	</div>
+	<div class="footer__left">
+		<span>© Cinema Guru 2014</span>
+		<a href="#">Поиск по сайту</a>
+	</div>
+	<div class="footer__right">
+		<a href="agslnufr@gmail.com">
+			Дизайн сайта
+		</a>
+	</div>
+</div>
+<div class="overlay js-overlay" style="display:block"></div>
+<div class="popup js-popup" data-popup="js-popup-callback" style="display: block;">
+	<div class="popup__in">
+		<div class="popup__title">Подтверждение</div>
+		<div class="popup__descr">
+			<span>На указанный вами электронный почтовый ящик было отправлено письмос просьбой перейти по ссылке для завершения регистрации.</span>
+		</div>
+		<a class="btn btn_yellow is-width" href="#">вернуться на сайт</button>
+		<button class="popup__close js-popup-close" type="button"></button>
+	</div>
+</div>
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
