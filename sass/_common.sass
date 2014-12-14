@@ -169,18 +169,24 @@ a
 			height: 180px
 			border-radius: 2px
 			text-align: center
-		.object__location
-			right: -120px
+			+vertical		
 		.object__link			
 			color: #161D24
 			span
 				text-decoration: underline
-				width: 76px
 				&:hover
 					text-decoration: none
+		.object__item
+			+clr
+			margin-bottom: 3px
+			p
+				float: left
+		.drop
+			float: right
 		.pictures__img
 			background: $lightg
 			text-align: center
+			+vertical
 		.descr
 			width: 567px
 			height: 160px			
@@ -197,7 +203,37 @@ a
 		.select__list,
 		.select__text
 			background-color: #FFF 
-			
+		.site-input
+			float: right
+.drop
+	position: relative
+	width: 82px
+	background: $lightg
+	height: 24px
+	border-radius: 2px
+	&:after
+		content: ""
+		position: absolute
+		+s(triangle)
+		right: 9px
+		bottom: 7px
+.site-input
+	padding: 0 6px
+	height: 24px
+	width: 250px 
+	background: $lightg
+	color: #161D24
+	border-radius: 2px
+.download
+	padding: 8px 27px 
+	font-size: 14px
+	+med
+	color: #161d24
+	background: #F4F4F4
+	border-radius: 2px
+	&:hover
+		background-color: #fff
+	 			
 
 
 
