@@ -60,6 +60,7 @@
 $yellow: #eee551
 $darkb: #161d24
 $lightb: #d8dfe6
+$lightg: #e9e9e9 
 
 
 body
@@ -162,6 +163,44 @@ a
 	&_page-part
 		.page-part
 			margin-top: -25px
+	&_redact
+		.object__img
+			background: $lightg
+			height: 180px
+			border-radius: 2px
+			text-align: center
+		.object__location
+			right: -120px
+		.object__link			
+			color: #161D24
+			span
+				text-decoration: underline
+				width: 76px
+				&:hover
+					text-decoration: none
+		.pictures__img
+			background: $lightg
+			text-align: center
+		.descr
+			width: 567px
+			height: 160px			
+			textarea
+				padding: 15px 13px 
+				width: 100%
+				height: 100%
+				border: none
+				color: #161D24
+				font-size: 12px
+				background: $lightg
+				border-radius: 2px				
+				+med
+		.select__list,
+		.select__text
+			background-color: #FFF 
+			
+
+
+
 
 .footer
 	margin: 0 auto 
