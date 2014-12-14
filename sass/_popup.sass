@@ -1,0 +1,40 @@
+// .has-open-popup
+// 	body
+// 		overflow: hidden
+// 		padding-right: 17px
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 100
+	background: #000 
+	background: rgba(#000,.5) 
+.popup
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0	
+	z-index: 200
+	padding: 30px 0 
+	+vertical
+.popup__in
+	display: inline-block
+	vertical-align: middle
+	text-align: left
+	position: relative
+	padding: 25px 
+	width: 575px
+	background: #161D24
+	font-size: 14px
+	color: #fff
+	+light 
+	border: 3px solid #D4D4D4
+
+.btn
+	padding: 2px 15px 3px 
+	font-family: 'Roboto', Arial, sans-serif
+	+reg
