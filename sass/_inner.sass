@@ -788,3 +788,74 @@
 		+med
 		&:hover
 			text-decoration: none
+.table
+	display: table
+	margin-bottom: 10px
+	width: 100%
+	&__item
+		display: table-cell
+		vertical-align: middle
+		border-left: 10px solid #fff
+		background: $lightg
+		height: 50px
+		border-radius: 2px
+		font-size: 0
+		+med
+		color: #161d24
+		.icon-star
+			vertical-align: middle
+		&:first-child
+			border: 0
+	a
+		font-size: 14px
+		+med
+		color: #161d24
+	sap
+		font-size: 10px
+		vertical-align: top
+
+	&__square
+		text-align: center
+		width: 55px
+		font-size: 14px
+	&__square2
+		font-size: 0
+		width: 60px
+		text-align: center
+		a
+			display: inline-block
+			+s(write-b)
+			&:hover
+				+s(write-r)
+	&__img
+		width: 76px
+		a
+			display: block
+			height: 50px
+			width: 76px
+			overflow: hidden 
+		img
+			display: block
+			height: auto
+			width: 100%
+			border-radius: 2px
+	&__long
+		//width: 930px
+		padding: 0 17px
+	&__col1,
+	&__col2,
+	&__col3
+		display: inline-block
+		font-size: 14px
+		vertical-align: middle
+	&__col1
+		width: 400px
+		font-size: 18px
+	&__col2
+		width: 400px
+	&__col3
+		width: 82px
+
+
+
+	
