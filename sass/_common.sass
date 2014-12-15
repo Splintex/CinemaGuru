@@ -183,6 +183,7 @@ a
 			margin-bottom: 2px
 			p
 				float: left
+				padding-top: 2px
 		.drop
 			float: right
 		.pictures-wrap
@@ -200,13 +201,17 @@ a
 				height: 100%
 				border: none
 				color: #161D24
-				font-size: 12px
+				font-size: 14px
 				background: $lightg
-				border-radius: 2px				
+				border-radius: 2px		
+				font-family: 'Roboto', sans-serif
 				+med
-		.select__list,
-		.select__text
-			background-color: #FFF 
+				+placeholder
+					+light
+					font-style: italic
+				&[readonly]	
+					background: #fff
+					margin-top: 48px 
 		.site-input
 			float: right
 .drop
@@ -291,16 +296,23 @@ a
 		text-decoration: underline
 		&:hover
 			text-decoration: none
+.btn-wrap
+	text-align: right
+	margin: 22px 0
 .btn
 	display: inline-block
-	padding: 2px 15px 3px 
-	color: #FFF
+	color: #fff
+	height: 23px
+	padding: 0 15px 
+	line-height: 21px
+	font-size: 14px
 	font-family: 'Roboto', Arial, sans-serif
 	+reg
 	border-radius: 2px
 	background: $darkb
 	box-shadow: 0 -2px 0 #000 inset
 	text-decoration: none
+	text-align: center
 	+light
 	+tr(background .2s)
 	&:hover		
@@ -339,6 +351,8 @@ a
 		width: 126px
 		margin-left: 8px
 		+reg
+	&_mod
+		color: $yellow 
 
 .raty
 	margin: 5px 0 
@@ -406,18 +420,23 @@ a
 	+s(star)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.input-bold-wrap
+	display: inline-block
+	margin-left: 7px
+	vertical-align: middle
+	width: 275px
+	&:first-child
+		margin-left: 0
+.input-bold
+	display: block
+	padding: 0 10px 
+	width: 100%
+	height: 31px
+	background: #E9E9E9
+	border-radius: 2px
+	font-family: 'Roboto', Arial, sans-serif
+	font-size: 14px
+	+med
 
 
 

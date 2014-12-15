@@ -14,6 +14,7 @@
 	background: rgba(#000,.5) 
 .popup
 	position: fixed
+	display: none
 	top: 0
 	left: 0
 	right: 0
@@ -122,6 +123,8 @@
 			+s(soc-tw)
 .field-row
 	font-size: 0
+	&_margin
+		margin-bottom: 15px
 .field_cell
 	display: inline-block
 	vertical-align: middle
@@ -134,15 +137,21 @@
 		width: 62px
 	.field__body
 		width: 183px
+.field_width
+	display: inline-block
+	vertical-align: middle
+	width: 353px
+	.field__title
+		color: $yellow
+		width: 170px
+		text-align: right
+		padding-right: 10px
+	.field__body
+		width: 183px
 .field_yellow
 	color: $yellow 
 	.field__title
-		color: $yellow
-.btn
-	height: 23px
-	padding: 0 15px 
-	line-height: 21px
-	font-size: 14px
+
 .icon-approve
 	display: inline-block
 	vertical-align: middle

@@ -275,6 +275,13 @@
 	.name,
 	.redact
 		padding-top: 13px
+	p
+		color: #a1a1a1 
+		a
+			color: #161d24
+			text-decoration: underline
+			&:hover
+				text-decoration: none
 .page-part
 	padding: 10px 0 10px 11px	
 	+clr
@@ -317,6 +324,30 @@
 			&:after
 				top: 10px
 				+rotate(-180)
+.select_date
+	.select__text
+		width: 146px
+		&:after,
+		&:before
+			display: none
+	.select__date
+		position: absolute
+		right: 0
+		top: 0
+		width: 32px
+		height: 28px
+		background: #E9E9E9
+		border-radius: 2px
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			+s(select) 
+			margin: -8px 0 0 -10px 
+.select_white
+	.select__text
+		background: #fff 
 .select__text
 	position: relative
 	display: block
@@ -375,6 +406,7 @@
 	background: $yellow 
 	font-size: 24px
 	color: #161D24
+	min-height: 44px
 	border-radius: 3px
 	+bold
 	+clr
@@ -384,6 +416,9 @@
 	.redact
 		padding: 0
 		margin-left: 2px
+	.location,
+	.rate-wrap
+		margin-top: -3px
 .title-grey
 	padding: 6px 11px
 	font-size: 18px
@@ -652,6 +687,10 @@
 .person
 	margin-top: -24px
 	+clr
+	&_mod
+		margin: 25px 0 0
+	.input-bold-wrap
+		margin-bottom: 30px
 	&__img
 		float: left
 		border: 2px solid #DDE6F0
@@ -669,20 +708,35 @@
 		height: 184px
 		padding-left: 17px 
 	&__item
-		margin-bottom: 8px
-		i
-			display: inline-block
-			vertical-align: middle
+		margin-bottom: 2px
 		span
 			display: inline-block
 			margin-left: 12px 
 			vertical-align: middle
 			font-size: 14px
 			+med
+		em
+			color: #a1a1a1 
+	&__icon
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		text-align: center
+		margin-right: 5px
+		margin-left: 0
+		width: 30px
+		height: 28px
+		line-height: 28px
+		i
+			display: inline-block
+			vertical-align: middle
+		
 	&__recall
 		position: absolute
 		left: 15px
 		bottom: 0
+		.btn
+			min-width: 215px
 	&__link
 		vertical-align: middle
 		font-size: 14px
@@ -705,6 +759,11 @@
 		margin-top: 20px
 		&:first-child
 			margin-top: 0
+	&__btn
+		text-align: right
+		margin-bottom: 5px
+	&_mod
+		margin-top: 25px
 .descr-wrap
 	margin-bottom: 32px 
 .object
@@ -912,6 +971,16 @@
 			width: 165px
 		.table__col5
 			width: 80px
+	&_short
+		width: 740px
+		.table__col1
+			width: 250px
+		.table__col2
+			text-align: right
+			width: 310px
+			padding-right: 20px
+		.rate-counter
+			margin: 0 20px 0 0 
 .price
 	display: inline-block
 	padding-left: 4px

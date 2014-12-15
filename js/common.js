@@ -2,7 +2,9 @@ head.ready(function() {
 
 	$(document).on("click", function(){
 		$(".js-select-list").slideUp(100);
-		$(".js-select").removeClass("is-active");
+        $(".js-select").removeClass("is-active");
+        $(".js-popup").fadeOut(300);
+		$(".js-overlay").fadeOut(300);
 	});
 	$('.js-raty').raty({
 		score: function() {
@@ -53,4 +55,28 @@ head.ready(function() {
         return false;
         
     });
+
+// popups
+    $(".js-popup-link").on("click", function(event){
+        $(".js-overlay").fadeIn(300);
+        var popup = $(this).attr("href");
+        $(".js-popup").fadeOut(300)
+        $('[data-popup="'+popup+'"]').fadeIn(300);
+        event.stopPropagation();
+        return false; 
+    });
+
+    $(".js-popup-close").on("click", function(){
+        $(".js-overlay").fadeOut(300); 
+        $(this).parents(".js-popup").fadeOut(300);
+        return false;
+    });
+    $(".js-popup").children().on("click", function(event){
+        event.stopPropagation();
+    });
+    $(".js-popup").on("click", function(){
+        $(".js-overlay").fadeOut(300);
+        $(".js-popup").fadeOut(300);
+    });
+
 });

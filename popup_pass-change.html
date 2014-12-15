@@ -30,13 +30,21 @@
 	</div>
 </div>
 <div class="overlay js-overlay" style="display:block"></div>
-<div class="popup js-popup" data-popup="js-popup-confirm" style="display: block;">
+<div class="popup js-popup" data-popup="js-popup-change-pass" style="display: block;">
 	<div class="popup__in">
-		<div class="popup__title">Подтверждение</div>
-		<div class="popup__descr">
-			<span>На указанный вами электронный почтовый ящик было отправлено письмос просьбой перейти по ссылке для завершения регистрации.</span>
+		<div class="popup__title">Смена пароля</div>
+		<div class="popup__descr">Для смены пароля введите ваш электронный почтовый ящик:</div>
+		<div class="field-row field-row_margin">
+			<div class="field field_inline field_cell">
+				<div class="field__title">
+					Email:
+				</div>
+				<div class="field__body">
+					<input type="email">
+				</div>
+			</div>
 		</div>
-		<a class="btn btn_yellow is-width" href="#">вернуться на сайт</button>
+		<button class="btn btn_yellow is-width" type="submit">сменить пароль</button>
 		<button class="popup__close js-popup-close" type="button"></button>
 	</div>
 </div>
