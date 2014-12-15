@@ -572,6 +572,21 @@
 			border-radius: 3px
 			&:focus
 				border-color: #a8a8a8
+	&_search
+		text-align: center
+		.field__body
+			display: inline-block
+			width: 430px
+		input
+			font-size: 14px
+			display: block
+			padding: 0 10px 
+			width: 100% 
+			height: 28px
+			border: 2px solid #d4d4d4
+			border-radius: 3px
+			&:focus
+				border-color: #a8a8a8
 	&_code
 		display: inline-block
 		vertical-align: middle
@@ -790,7 +805,7 @@
 			text-decoration: none
 .table
 	display: table
-	margin-bottom: 10px
+	margin-bottom: 10px 
 	width: 100%
 	&__item
 		display: table-cell
@@ -806,10 +821,6 @@
 			vertical-align: middle
 		&:first-child
 			border: 0
-	a
-		font-size: 14px
-		+med
-		color: #161d24
 	sap
 		font-size: 10px
 		vertical-align: top
@@ -844,17 +855,67 @@
 		padding: 0 17px
 	&__col1,
 	&__col2,
-	&__col3
+	&__col3,
+	&__col4,
+	&__col5
 		display: inline-block
 		font-size: 14px
 		vertical-align: middle
 	&__col1
 		width: 400px
 		font-size: 18px
+		a
+			+med
+			color: #161d24
 	&__col2
 		width: 400px
 	&__col3
 		width: 82px
+	&__link
+		font-size: 12px 
+		color: #8896A4
+		+reg
+		border-bottom: 1px dashed #8896A4
+		vertical-align: bottom
+		&:hover
+			border: none
+	.is-active
+		position: relative
+		border: none
+		&:before
+			content: ""
+			position: absolute
+			width: 6px
+			height: 6px
+			background: #161D24
+			border-radius: 50%
+			top: 50%
+			margin-top: -3px
+			left: -10px
+	&_head
+		.table__item
+			background: #fff
+			height: 26px
+		.table__img
+			width: 76px
+		a
+			color: #8896A4
+	&_long
+		.table__col1
+			width: 340px
+		.table__col2
+			width: 185px
+		.table__col3
+			width: 185px
+		.table__col4
+			width: 165px
+		.table__col5
+			width: 80px
+.price
+	display: inline-block
+	padding-left: 4px
+	+s(rubl)
+
 
 
 
